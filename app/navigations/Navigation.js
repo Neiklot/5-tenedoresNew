@@ -36,7 +36,7 @@ export default function Navigation(){
                     options={{title:"Favoritos"}}
                 />
                 <Tab.Screen
-                    name="top-resturants"
+                    name="top-restaurants"
                     component={TopRestaurantsStack}
                     options={{title:"Top 5"}}
                 />
@@ -61,6 +61,18 @@ function screenOptions(route,color){
     switch(route.name){
         case "restaurants":
             iconName="compass-outline"
+            break;
+        case "favorites":
+            iconName="heart-outline"
+            break;
+        case "top-restaurants":
+            iconName="star-outline"
+            break;
+        case "search":
+            iconName="magnify"
+            break;
+        case "account":
+            iconName="home-outline";
             break;
         default:
             break;
